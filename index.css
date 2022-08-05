@@ -1,0 +1,128 @@
+.body{
+    padding: 20px;
+    margin: 20px;
+    background: rgb(160, 144, 144);
+    font-size: 14px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    background: whitesmoke;
+    font-size: 14px;
+    height: 450px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+
+.inner-div-left{
+    flex: .5;
+}
+
+.inner-div-right{
+    flex: .5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.inner-div-left{
+    flex: .5;
+    background-image: url(/image-product-desktop.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 30px;
+    color:rgb(3, 37, 3);
+}
+h3{
+    letter-spacing: 7px;
+   margin-right: 200px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4{
+    font-size: 12px;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+a :hover{
+    cursor: pointer;
+    color: green;
+}
+
+button{
+    background: rgb(3, 37, 3);
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button :hover{
+    color: rgb(12, 126, 12);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    main{
+        padding: 2em 1em;
+        align-items: flex-start;
+        height: max-content;
+        background: linear-gradient(180deg, white, white);
+    }
+    
+    .outer{
+        flex-direction: column;
+        height: 600px;
+    }
+    .inner-div-left{
+        background-size: cover;
+        object-position: 080%;
+        background-position: 10% 45%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .inner-div-right{
+        padding: 20px 0px;
+    }
+
+    h3{
+        letter-spacing: 7px;
+    }
+
+    h2{
+        font-size: 2em;
+    }
+
+    h3{font-size: 1em;
+    }
+
+    .amount h3{
+        color: rgb(3, 46, 3);
+    }
+}
